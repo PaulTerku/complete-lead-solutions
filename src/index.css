@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Complete Lead Solutions Design System
+   All colors use HSL format for Tailwind compatibility
+*/
+
+@layer base {
+  :root {
+    /* Primary: Deep Navy #0A2540 */
+    --primary: 212 75% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Bright Blue #1F7AFF */
+    --secondary: 217 100% 56%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent: Orange/Gold #F5A623 */
+    --accent: 39 91% 55%;
+    --accent-foreground: 212 75% 15%;
+
+    /* Background & Surface */
+    --background: 0 0% 100%;
+    --foreground: 210 29% 16%;
+
+    /* Light Gray Surface #F5F7FA */
+    --muted: 216 33% 97%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 16%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 16%;
+
+    /* Success: #16A34A */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Destructive/Danger: #DC2626 */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 100% 56%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 212 75% 15%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 216 33% 97%;
+    --sidebar-accent-foreground: 212 75% 15%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 100% 56%;
+  }
+
+  .dark {
+    --background: 212 75% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 212 75% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 212 75% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 100% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 212 75% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 212 50% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 39 91% 55%;
+    --accent-foreground: 212 75% 8%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 212 50% 20%;
+    --input: 212 50% 20%;
+    --ring: 217 100% 56%;
+
+    --sidebar-background: 212 75% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 217 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 212 50% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 212 50% 20%;
+    --sidebar-ring: 217 100% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
